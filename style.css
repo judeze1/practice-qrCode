@@ -3,8 +3,9 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background: hsl(0, 0%, 100%);
+    font-family: 'Outfit';
 }
 img{
     height: 100%;
@@ -25,12 +26,17 @@ img{
 
 .innerBox{
     background: hsl(212, 45%, 89%);
-    /* box-shadow: 300px red; */
-    width: 100%;
     width: 80%;
     height: 90%;
     border: 5px;
     align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+    .innerBox{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .qrCodeBox{
@@ -41,8 +47,8 @@ img{
     height: 90%;
 }
 .qrCodeBox > div{
-    height: 90%;
-    width: 25%;
+    max-height: 430px;
+    max-width: 250px;
     background: hsl(0, 0%, 100%);
     border-radius: 10px;
     padding: 5px;
@@ -56,23 +62,10 @@ img{
     word-break: keep-all;
 }
 
-.secAbsolute{
-    position: absolute;
-    top: 200px;
-    left: 0;
-    height: 150px;
-    padding: 0 0 0 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    justify-content: start;
-    align-items: start;
-
+.qrText > h1{
+    font-size: 22px;
 }
 
-.secAbsolute span{
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background: hsl(228, 45%, 44%);
+.qrText > p{
+    font-size: 15px;
 }
