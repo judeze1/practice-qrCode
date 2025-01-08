@@ -2,70 +2,37 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 100vh;
-    background: hsl(0, 0%, 100%);
-    font-family: 'Outfit';
+    background: hsl(218, 44%, 22%);
+    font-family: "Outfit", serif;
 }
 img{
-    height: 100%;
+    height: 300px;
     width: 100%;
-    border-radius: 10px;
-}
-.attribution {
-    font-size: 11px;
-    text-align: end;
-    width: 100%;
-    height: 5%;
-    padding: 0 35px 0 0;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
+    border-radius: 20px;
 }
 
 .innerBox{
-    background: hsl(212, 45%, 89%);
+    min-height: 400px;
     width: 80%;
-    height: 90%;
-    border: 5px;
-    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    /* background: hsl(216, 15%, 48%); */
+    background: hsl(212, 45%, 89%);
 }
 
-@media screen and (max-width: 400px) {
+h2, p{
+    text-align: center;
+}
+
+p{
+    font-size: 15px;
+}
+
+@media screen and (min-width: 400px) {
     .innerBox{
-        width: 100%;
-        height: 100%;
+        max-width: 300px;
     }
 }
 
-.qrCodeBox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 90%;
-}
-.qrCodeBox > div{
-    max-height: 430px;
-    max-width: 250px;
-    background: hsl(0, 0%, 100%);
-    border-radius: 10px;
-    padding: 5px;
-}
-.qrImage{
-    height: 60%;
-    width: 100%;
-}
-.qrText{
-    text-align: center;
-    word-break: keep-all;
-}
 
-.qrText > h1{
-    font-size: 22px;
-}
-
-.qrText > p{
-    font-size: 15px;
-}
